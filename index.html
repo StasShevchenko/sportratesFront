@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ставки на спорт</title>
+    <link rel="stylesheet" href="start_page/startPage.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-wrapper">
+        <h1>Ставки на спорт! Выиграй свой миллион!</h1>
+      </div>
+      <div class="enter-panel">
+        <input
+          type="text"
+          name="name"
+          id="loginInput"
+          placeholder="Введите логин!"
+        />
+        <input
+          type="password"
+          name="password"
+          id="passwordInput"
+          placeholder="Введите пароль!"
+        />
+        <input type="button" name="enter" value="Войти" id="enterButton" />
+        <h4>Нет аккаунта?</h4>
+        <input
+          type="button"
+          name="register"
+          value="Регистрация"
+          id="registrationButton"
+        />
+      </div>
+      <h2 id="errorMessageHeader">Неверный логин или пароль!</h2>
+    </div>
+  </body>
+  <script type = "module" src="start_page/startPageScript.js"></script>
+</html>
