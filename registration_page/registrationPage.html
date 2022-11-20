@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация!</title>
+    <link rel="stylesheet" href="registrationPage.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-wrapper">
+        <h1>Регистрация в ставках на спорт!</h1>
+      </div>
+      <div class="enter-panel">
+        <input
+          type="text"
+          name="name"
+          id="nameInput"
+          placeholder="Введите ваше ФИО!"
+        />
+        <input
+          type="text"
+          name="login"
+          id="loginInput"
+          placeholder="Введите логин!"
+        />
+        <input
+          type="password"
+          name="password"
+          id="passwordInput"
+          placeholder="Введите пароль!"
+        />
+        <input
+          type="text"
+          name="balance"
+          id="balanceInput"
+          placeholder="Изначальный баланс (спишется с карты)"
+        />
+        <input type="button" name="enter" value="Зарегистрироваться" id="registerButton" />
+        <input type="button" name="back" value="Назад" id="backButton"/>
+      </div>
+      <h2 id="validationErrorMessage">Заполните все поля!</h2>
+      <h2 id="userAlreadyExistsErrorMessage">Пользователь с таким логином уже существует!</h2>
+      <h2 id = "successMessage">Вы успешно зарегистрированы!</h2>
+    </div>
+  </body>
+  <script src="registrationPageScript.js"></script>
+</html>

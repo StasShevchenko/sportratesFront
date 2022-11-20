@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-wrapper{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #04AA6D;
+  }
+
+  .enter-panel{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enter-panel input{
+    width: 140%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .header-wrapper h1{
+    color: white
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  #validationErrorMessage,
+  #successMessage,
+  #userAlreadyExistsErrorMessage{
+    display: none;
+  }
+
+  
+

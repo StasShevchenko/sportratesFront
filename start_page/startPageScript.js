@@ -7,7 +7,7 @@ const URL = "http://192.168.109.228:8080/login";
 const Http = new XMLHttpRequest();
 
 registrationButton.addEventListener("click", function () {
-  //  window.location.href="../registration_page/registration.html";
+window.location.href="../registration_page/registrationPage.html";
 });
 
 enterButton.addEventListener("click", function () {
