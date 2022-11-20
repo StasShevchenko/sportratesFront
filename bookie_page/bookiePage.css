@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-wrapper{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #04AA6D;
+  }
+
+  .header-wrapper h1{
+    color: white
+  }
+
+  .scroll-bg{
+    margin: 40px;
+    background: white;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    overflow: auto;
+  }
+
+  .scroll-bg li{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    list-style: none;
+  }
+
+  .scroll-bg button{
+    height: 40px;
+    width: 200px;
+  }
+
+  .scroll-bg span {
+    margin-right: 10px;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  
+
+  #createMatchPopUpButton{
+    width: 300px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #04AA6D;
+    border-radius: 100px;
+  }
+
+  .pop-up-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pop-up {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 30px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .pop-up *{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .pop-up input{
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0 0.2);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #validationErrorMessage{
+    display: none;
+  }

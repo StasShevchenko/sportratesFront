@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создание матчей</title>
+    <link rel="stylesheet" href="bookiePage.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-wrapper">
+        <h1>Создание матчей</h1>
+      </div>
+      <div class="scroll-bg">
+        <ul id="matchesList"></ul>
+      </div>
+      <input
+        type="button"
+        name="create"
+        value="Создать матч"
+        id="createMatchPopUpButton"
+      />
+      <div class="pop-up-container" id="createMatchPopUp">
+        <div class="pop-up">
+          <h2>Создание матча</h2>
+          <input
+            type="text"
+            id="matchNameInput"
+            placeholder="Введите имя матча!"
+          />
+            <input
+            type="text"
+            id="gameNameInput"
+            placeholder="Введите название игры!">
+            <input 
+            type="text"
+            id="firstPlayerNameInput"
+            placeholder="Имя первой команды или игрока"
+            >
+            <input 
+            type="text"
+            id="secondPlayerNameInput"
+            placeholder="Имя второй команды или игрока"
+            >
+            <input 
+            type="text"
+            id="firstCoefficientInput"
+            placeholder="Коэффициент первого игрока"
+            >
+            <input 
+            type="text"
+            id="secondCoefficientInput"
+            placeholder="Коэффициент второго игрока"
+            >
+            <h3 id = "validationErrorMessage">Все поля должны быть заполнены!</h3>
+          <button id="createMatchButton">Создать матч</button>
+          <button id="cancelButton">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="bookiePageScript.js"></script>
+</html>
