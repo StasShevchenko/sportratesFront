@@ -7,7 +7,7 @@ const URL = "http://192.168.109.228:8080/login";
 const Http = new XMLHttpRequest();
 
 registrationButton.addEventListener("click", function () {
-window.location.href="../registration_page/registrationPage.html";
+  window.location.href = "../registration_page/registrationPage.html";
 });
 
 enterButton.addEventListener("click", function () {
@@ -32,15 +32,15 @@ passwordInput.addEventListener("input", function () {
 
 Http.onreadystatechange = function () {
   if (this.status == 200) {
-    console.log("SUCCESS LOGIN!");
     let userData = JSON.parse(Http.responseText);
-    if(userData.status == "client"){
-        sessionStorage.setItem("clientId", userData.id)
-        console.log("I am client");
-    }else{
-
+    if (userData.status == "client") {
+      sessionStorage.setItem("clientId", userData.id);
+      sessionStorage.setItem("clientName", userData.name);
+      window.location.href = "../client_page/clientPage.html";
+    } else {
+      window.location.href = "../bookie_page/bookiePage.html";
     }
-  } else {
+  } else if (this.status == 404) {
     errorMessage.style.display = "block";
   }
 };

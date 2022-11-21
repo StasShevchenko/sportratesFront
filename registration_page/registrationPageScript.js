@@ -12,7 +12,7 @@ const Http = new XMLHttpRequest();
 
 
 backButton.addEventListener("click", function(){
-    window.location.href="../registration_page/registrationPage.html";
+    window.location.href="../index.html";
 })
 
 registerButton.addEventListener("click", function(){
