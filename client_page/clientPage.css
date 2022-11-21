@@ -48,3 +48,69 @@ input[type="reset"] {
   text-decoration: none;
   margin: 10px;
 }
+
+.balance-wrapper {
+  border-radius: 10px;
+  background: #3fd79f;
+  padding: 20px;
+  margin-right: -40px;
+}
+
+#avatarImage {
+  margin-left: 400px;
+}
+
+.balance-wrapper h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#addBalanceButton {
+  padding: 5px;
+  margin: 1px;
+}
+
+
+.pop-up-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-up {
+  background-color: #fff;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 30px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pop-up *{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.pop-up input{
+  padding: 10px;
+}
+
+button {
+  background-color: #04AA6D;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0 0.2);
+  padding: 10px;
+  margin: 10px;
+}
