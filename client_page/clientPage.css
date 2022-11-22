@@ -70,7 +70,6 @@ input[type="reset"] {
   margin: 1px;
 }
 
-
 .pop-up-container {
   display: none;
   background-color: rgba(0, 0, 0, 0.3);
@@ -93,24 +92,132 @@ input[type="reset"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
+ .pop-up input[type = "text"],
+ .pop-up input[type = "button"],
+ .pop-up h2,
+ .pop-up button {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 .pop-up *{
   width: 100%;
   margin-bottom: 10px;
 }
 
-.pop-up input{
+.pop-up input[type="radio"],
+.pop-up p
+{
+  width: auto;
+  margin-bottom: 0px;
+}
+
+.pop-up input[type="text"],
+.pop-up input[type="button"] {
   padding: 10px;
 }
 
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   border: 0;
   border-radius: 5px;
   color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0 0.2);
   padding: 10px;
   margin: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #04aa6d;
+  border-radius: 100px;
+}
+
+.rates-scroll-bg,
+.matches-scroll-bg {
+  margin: 40px;
+  background: white;
+  width: 650px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  overflow: auto;
+}
+
+.rates-scroll-bg li,
+.matches-scroll-bg li {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.rates-scroll-bg button,
+.matches-scroll-bg button {
+  height: 40px;
+  width: 200px;
+}
+
+.rates-scroll-bg span,
+.matches-scroll-bg span {
+  margin-right: 10px;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.rates-scroll-bg-wrapper,
+.matches-scroll-bg-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.pop-up h3{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+#addRatePopUp .pop-up{
+  width: 400px;
+  text-align: left;
+}
+
+#addRatePopUp h2,
+#matchHeader{
+  text-align: center;
+}
+
+
+.radio-container{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+#ratesList li{ 
+  margin-bottom: 20px;
 }

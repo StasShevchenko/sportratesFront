@@ -20,6 +20,23 @@
         </div>
       </div>
 
+
+      <div class="menu-container">
+        <div class="rates-scroll-bg-wrapper">
+          <h3>Ваши ставки</h3>
+          <div class="rates-scroll-bg">
+            <ul id="ratesList"></ul>
+          </div>
+        </div>
+        <div class="matches-scroll-bg-wrapper">
+          <h3>Матчи для ставок</h3>
+          <div class="matches-scroll-bg">
+            <ul id="matchesList"></ul>
+          </div>
+        </div>
+      </div>
+   
+
       <div class="pop-up-container" id="addBalancePopUp">
         <div class="pop-up">
           <h2>Пополнение баланса</h2>
@@ -33,6 +50,40 @@
         </div>
       </div>
 
+      <div class="pop-up-container" id="addRatePopUp">
+        <div class="pop-up">
+          <h2>Делаем ставку!</h2>
+          <h3 id = "matchHeader">Барселона против Цска</h3>
+          <input
+            type="text"
+            id="addRateInput"
+            placeholder="Введите сумму ставки!";
+          />
+          <h4 id = "coefficientsHeader">Коэффициенты 1.24 и 3.5</h4>
+          <h4 id = "ratePlayersHeader">Игроки: Барселона и Цска</h4>
+          <h4>На кого ставим?</h4>
+          <div class="radio-container">
+            <div style="display: flex; margin-bottom: 0px;">
+              <input type="radio" checked id="firstPlayerRb" name="player" />
+              <p style="margin: 10px 5px">Первый игрок</p>
+            </div>
+            <div style="display: flex; margin-bottom: 0px;">
+              <input type="radio" id="secondPlayerRb" name="player"/>
+              <p style="margin: 10px 5px">Второй игрок</p>
+            </div>
+          </div>
+          <h4 id="rateErrorMessageHeader"></h4>
+          <button id="addRatePopUpButton">Подтвердить</button>
+          <button id="cancelAddRateButton">Отмена</button>
+        </div>
+      </div>
+
+      <div class="pop-up-container" id="reloadPopUp">
+        <div class="pop-up">
+          <h2>Выбранный матч был завершен</h2>
+          <button id="reloadPageButton">Обновить страницу</button>
+        </div>
+      </div>
     </div>
   </body>
   <script src="clientPageScript.js"></script>

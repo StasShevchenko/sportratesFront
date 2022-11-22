@@ -24,7 +24,6 @@ const cancelButton = document.getElementById("cancelButton");
 getMatchesHttp.open("GET", URL + "matches");
 getMatchesHttp.send();
 getMatchesHttp.onreadystatechange = function () {
-  console.log(getMatchesHttp.responseText);
   if (this.readyState == 4 && this.status == 200) {
     let matchesDataList = JSON.parse(getMatchesHttp.responseText);
     while (matchesList.firstChild) {

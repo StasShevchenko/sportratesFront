@@ -7,7 +7,7 @@ const balanceInput = document.getElementById("balanceInput");
 const passwordInput = document.getElementById("passwordInput");
 const successMessage = document.getElementById("successMessage");
 const backButton = document.getElementById("backButton");
-const URL = "http://192.168.109.228:8080/register";
+const URL = "http://localhost/register";
 const Http = new XMLHttpRequest();
 
 
