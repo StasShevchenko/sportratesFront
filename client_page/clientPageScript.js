@@ -17,6 +17,7 @@ const addBalancePopUpButton = document.getElementById("addBalancePopUpButton");
 const cancelAddBalanceButton = document.getElementById(
   "cancelAddBalanceButton"
 );
+const exitButton = document.getElementById("exitButton");
 let userBalance;
 const addBalanceInput = document.getElementById("addBalanceInput");
 //Отображение матчей
@@ -108,6 +109,10 @@ getBalanceHttp.onreadystatechange = function () {
     location.reload();
   }
 };
+
+exitButton.addEventListener("click", function(){
+  location.href = "../index.html";
+})
 
 //Работа с отображением матчей
 activeMatchesHttp.open("GET", URL + "activematches");

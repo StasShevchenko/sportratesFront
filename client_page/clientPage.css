@@ -28,13 +28,34 @@ h1 {
 
 .header-wrapper {
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
   background: #04aa6d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 80px;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.client-menu-wrapper {
+  width: 500px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+#avatarImage {
+  margin-right: 40px;
+}
+
+
+
+.balance-wrapper {
+  border-radius: 10px;
+  background: #3fd79f;
+  padding: 20px;
 }
 
 input[type="button"],
@@ -49,26 +70,23 @@ input[type="reset"] {
   margin: 10px;
 }
 
-.balance-wrapper {
-  border-radius: 10px;
-  background: #3fd79f;
-  padding: 20px;
-  margin-right: -40px;
-}
-
-#avatarImage {
-  margin-left: 400px;
-}
 
 .balance-wrapper h4 {
   color: white;
   margin-bottom: 10px;
 }
 
-#addBalanceButton {
+#addBalanceButton,
+#exitButton {
+  width: 100%;
   padding: 5px;
-  margin: 1px;
+  margin: 5px;
+  display: block;
 }
+
+
+
+
 
 .pop-up-container {
   display: none;
